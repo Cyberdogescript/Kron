@@ -1,23 +1,27 @@
 # Kron Programming Language
 
-Kron is an experimental lightweight programming language with a custom interpreter, standard libraries, and editor support.
+**Kron** is an experimental lightweight programming language with a custom interpreter, a set of standard libraries, and editor support.
 
-The project is designed as a simple and extensible scripting language that demonstrates how programming languages, interpreters, and tooling can be built from scratch.
+The goal of the project is to demonstrate how a programming language, its interpreter, and development tools can be built from scratch.
+
+Kron currently runs on a Python-based runtime and supports simple scripting, libraries, and command-line execution.
 
 ---
 
-## Features
+# Features
 
 * Custom Kron interpreter
-* Standard libraries (math, http, sorting, file operations, strings)
+* 20 standard libraries
 * Command-line runtime (`kron file.krn`)
-* Syntax highlighting for Visual Studio Code and Notepad++
-* Snippets and basic IDE support
-* Simple and readable syntax
+* Syntax highlighting for Visual Studio Code
+* Syntax highlighting for Notepad++
+* Code snippets for Kron
+* Simple readable syntax
+* Extendable library system
 
 ---
 
-## Example Code
+# Example Program
 
 ```kron
 kron 0.1
@@ -45,7 +49,7 @@ Start
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 Kron/
@@ -61,7 +65,22 @@ Kron/
 │   ├ httplib.py
 │   ├ sortlib.py
 │   ├ stringlib.py
-│   └ filelib.py
+│   ├ filelib.py
+│   ├ timelib.py
+│   ├ randomlib.py
+│   ├ arraylib.py
+│   ├ syslib.py
+│   ├ netlib.py
+│   ├ jsonlib.py
+│   ├ cryptolib.py
+│   ├ threadlib.py
+│   ├ processlib.py
+│   ├ pathlib.py
+│   ├ consolelib.py
+│   ├ datelib.py
+│   ├ configlib.py
+│   ├ parserlib.py
+│   └ guilib.py
 │
 ├ examples/
 │   └ main.krn
@@ -71,22 +90,22 @@ Kron/
 
 ---
 
-## Installation
+# Installation
 
-### 1. Clone the repository
+## 1. Clone the repository
 
 ```
 git clone https://github.com/yourname/kron
 cd kron
 ```
 
-### 2. Run Kron
+## 2. Run Kron
 
 ```
 kron main.krn
 ```
 
-or directly using Python:
+or run the interpreter directly:
 
 ```
 python runtime/kron.py main.krn
@@ -94,32 +113,42 @@ python runtime/kron.py main.krn
 
 ---
 
-## Command Line Usage
+# Command Line Usage
 
 ```
-kron file.krn       Run Kron script
-kron --help         Show help
-kron --version      Show Kron version
+kron file.krn       run Kron script
+kron --help         show help
+kron --version      show version
 ```
 
 ---
 
-## Standard Libraries
+# Standard Libraries
 
-Kron includes several built-in libraries:
+Kron currently includes **20 built-in libraries** located in the `stdlib` directory.
 
-| Library | Description          |
-| ------- | -------------------- |
-| math    | math operations      |
-| http    | HTTP requests        |
-| sort    | sorting algorithms   |
-| string  | string utilities     |
-| file    | file operations      |
-| random  | random numbers       |
-| time    | time functions       |
-| json    | JSON utilities       |
-| net     | networking utilities |
-| console | console utilities    |
+| Library    | Description                   |
+| ---------- | ----------------------------- |
+| mathlib    | mathematical operations       |
+| httplib    | HTTP requests                 |
+| sortlib    | sorting algorithms            |
+| stringlib  | string manipulation           |
+| filelib    | file read/write               |
+| timelib    | time utilities                |
+| randomlib  | random number generation      |
+| arraylib   | array utilities               |
+| syslib     | system functions              |
+| netlib     | networking utilities          |
+| jsonlib    | JSON parsing                  |
+| cryptolib  | cryptographic tools           |
+| threadlib  | multithreading utilities      |
+| processlib | process management            |
+| pathlib    | path utilities                |
+| consolelib | console utilities             |
+| datelib    | date utilities                |
+| configlib  | configuration utilities       |
+| parserlib  | parsing utilities             |
+| guilib     | graphical interface utilities |
 
 Example:
 
@@ -131,25 +160,26 @@ sort.stalin([5,3,7,4,9])
 
 ---
 
-## Editor Support
+# Editor Support
 
-Kron currently provides:
+Kron currently supports:
 
-* Syntax highlighting for **Visual Studio Code**
-* Syntax highlighting for **Notepad++**
-* Code snippets for Kron functions
+* Visual Studio Code syntax highlighting
+* Notepad++ syntax highlighting
+* Kron code snippets
 
-Planned features:
+Planned improvements:
 
-* IntelliSense / autocomplete
-* Debugger
+* IntelliSense (autocomplete)
+* Debugger support
 * Formatter
+* Language server
 
 ---
 
-## Roadmap
+# Roadmap
 
-Future improvements for Kron:
+Future improvements planned for Kron:
 
 * Lexer and parser system
 * AST interpreter
@@ -157,16 +187,16 @@ Future improvements for Kron:
 * Package manager (`kron install`)
 * Project manager (`kron new`)
 * Debugging tools
-* Full language server support
+* Full IDE support
 
 ---
 
-## License
+# License
 
 Kron is released under the **MIT License**.
 
 ---
 
-## Author
+# Author
 
 Created by **Bartu**.
